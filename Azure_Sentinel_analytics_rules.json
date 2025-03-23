@@ -14,7 +14,7 @@
             "kind": "Scheduled",
             "apiVersion": "2023-12-01-preview",
             "properties": {
-                "displayName": "SampleRule",
+                "displayName": "SampleRule1",
                 "description": "Sample rule",
                 "severity": "Low",
                 "enabled": true,
