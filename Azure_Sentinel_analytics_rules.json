@@ -336,6 +336,45 @@
                 ],
                 "scenarioExclusionPatterns": []
             }
+        },
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/NEW-RULE-ID')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/NEW-RULE-ID')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2023-12-01-preview",
+            "properties": {
+                "displayName": "New Suspicious Login Rule",
+                "description": "Detects suspicious login activity",
+                "severity": "Medium",
+                "enabled": true,
+                "query": "SigninLogs | where ResultType != 0 | where Location != 'US'",
+                "queryFrequency": "PT1H",
+                "queryPeriod": "P1D",
+                "triggerOperator": "GreaterThan",
+                "triggerThreshold": 10,
+                "suppressionDuration": "PT1H",
+                "suppressionEnabled": false,
+                "startTimeUtc": null,
+                "tactics": ["Initial Access"],
+                "techniques": ["T1078"],
+                "subTechniques": [],
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": false,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT1H",
+                        "matchingMethod": "AllEntities",
+                        "groupByEntities": [],
+                        "groupByAlertDetails": [],
+                        "groupByCustomDetails": []
+                    }
+                },
+                "eventGroupingSettings": {
+                    "aggregationKind": "SingleAlert"
+                }
+            }
         }
     ]
 }
