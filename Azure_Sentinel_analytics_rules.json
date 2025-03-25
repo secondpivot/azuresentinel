@@ -428,8 +428,8 @@
             "kind": "Scheduled",
             "apiVersion": "2023-12-01-preview",
             "properties": {
-                "displayName": "SampleRule3",
-                "description": "Sample rule3",
+                "displayName": "SampleRule33",
+                "description": "Sample rule33",
                 "severity": "Low",
                 "enabled": true,
                 "query": "AzureActivity\r\n| where _ResourceId contains \"1\"",
