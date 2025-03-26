@@ -9,7 +9,7 @@
     "resources": [
         {
             "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/1')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/2')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/1')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
             "kind": "Scheduled",
             "apiVersion": "2023-12-01-preview",
@@ -51,6 +51,6 @@
                 "sentinelEntitiesMappings": null,
                 "templateVersion": null
             }
-        }, 
+        },     
     ]
 }
