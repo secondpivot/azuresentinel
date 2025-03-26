@@ -53,14 +53,14 @@
             }
         },   
         {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/92')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/92')]",
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/94')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/94')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
             "kind": "Scheduled",
             "apiVersion": "2023-12-01-preview",
             "properties": {
-                "displayName": "SampleRule92",
-                "description": "Sample rule92",
+                "displayName": "SampleRule94",
+                "description": "Sample rule94",
                 "severity": "High",
                 "enabled": true,
                 "query": "AzureActivity\r\n| where _ResourceId contains \"2\"",
@@ -98,14 +98,14 @@
             }
         }, 
         {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/93')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/93')]",
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/95')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/95')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
             "kind": "Scheduled",
             "apiVersion": "2023-12-01-preview",
             "properties": {
-                "displayName": "SampleRule93",
-                "description": "Sample rule93",
+                "displayName": "SampleRule95",
+                "description": "Sample rule95",
                 "severity": "High",
                 "enabled": true,
                 "query": "AzureActivity\r\n| where _ResourceId contains \"2\"",
