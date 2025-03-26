@@ -8,17 +8,17 @@
     },
     "resources": [
         {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/1')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/1')]",
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/2')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/2')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
             "kind": "Scheduled",
             "apiVersion": "2023-12-01-preview",
             "properties": {
-                "displayName": "SampleRule1",
-                "description": "Sample rule1",
+                "displayName": "SampleRule2",
+                "description": "Sample rule2",
                 "severity": "High",
                 "enabled": true,
-                "query": "AzureActivity\r\n| where _ResourceId contains \"1\"",
+                "query": "AzureActivity\r\n| where _ResourceId contains \"2\"",
                 "queryFrequency": "PT5H",
                 "queryPeriod": "PT5H",
                 "triggerOperator": "GreaterThan",
