@@ -14,11 +14,11 @@
             "kind": "Scheduled",
             "apiVersion": "2023-12-01-preview",
             "properties": {
-                "displayName": "SampleRule91",
+                "displayName": "SampleRule91-changed",
                 "description": "Sample rule91",
                 "severity": "High",
                 "enabled": true,
-                "query": "AzureActivity\r\n| where _ResourceId contains \"changed\"",
+                "query": "AzureActivity\r\n| where _ResourceId contains \"changed2\"",
                 "queryFrequency": "PT5H",
                 "queryPeriod": "PT5H",
                 "triggerOperator": "GreaterThan",
