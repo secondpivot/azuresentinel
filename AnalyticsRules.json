@@ -18,7 +18,7 @@
                 "description": "Sample rule91",
                 "severity": "High",
                 "enabled": true,
-                "query": "AzureActivity\r\n| where _ResourceId contains \"2\"",
+                "query": "AzureActivity\r\n| where _ResourceId contains \"changed\"",
                 "queryFrequency": "PT5H",
                 "queryPeriod": "PT5H",
                 "triggerOperator": "GreaterThan",
